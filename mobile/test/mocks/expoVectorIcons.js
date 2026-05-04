@@ -1,7 +1,10 @@
-const NullIcon = () => null;
+const React = require('react');
+const { View } = require('react-native');
+
+const MockIcon = (props) => React.createElement(View, props);
 
 module.exports = {
-  Ionicons: NullIcon,
-  AntDesign: NullIcon,
-  MaterialIcons: NullIcon,
+  Ionicons: MockIcon,
+  AntDesign: MockIcon,
+  MaterialIcons: MockIcon,
 };
