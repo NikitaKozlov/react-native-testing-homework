@@ -9,6 +9,14 @@ describe('SearchInput', () => {
     jest.clearAllMocks();
   });
 
+  it('should match snapshot', () => {
+    const { toJSON } = render(
+      <SearchInput value="" onSearch={mockOnSearch} />
+    );
+
+    expect(toJSON()).toMatchSnapshot();
+  });
+
   it('should render the search input component', () => {
     const { getByPlaceholderText, getByTestId } = render(
       <SearchInput value="" onSearch={mockOnSearch} />

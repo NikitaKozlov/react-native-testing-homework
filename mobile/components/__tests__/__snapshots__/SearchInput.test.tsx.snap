@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchInput should match snapshot 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "borderColor": "#CCCCCC",
+      "borderRadius": 4,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "marginVertical": 24,
+      "paddingHorizontal": 23,
+      "width": 300,
+    }
+  }
+>
+  <TextInput
+    accessibilityLabel="Text input field"
+    onChangeText={[MockFunction]}
+    placeholder="Filter lotteries"
+    style={
+      {
+        "flex": 1,
+        "fontSize": 16,
+        "height": 40,
+        "paddingRight": 10,
+      }
+    }
+    value=""
+  />
+  <View
+    color="#999999"
+    name="search"
+    size={16}
+    testID="icon"
+  />
+</View>
+`;
