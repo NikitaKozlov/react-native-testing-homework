@@ -13,6 +13,7 @@ const FAB = ({ onPress }: Props) => {
       accessibilityRole="button"
       style={styles.container}
       onPress={onPress}
+      testID="fab"
     >
       <Ionicons name="add" size={30} color="#FFF" testID="icon" />
     </TouchableOpacity>
