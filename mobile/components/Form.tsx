@@ -56,7 +56,7 @@ const LotteryForm = ({ onSubmit, onNavigateBack }: Props) => {
     <View style={styles.container}>
       <Text style={styles.title}>Add new lottery</Text>
       <TextInput
-        accessibilityLabel="Text input field"
+        accessibilityLabel="Lottery Input Field"
         style={styles.input}
         placeholder="Lottery Name"
         value={formik.values.name}
@@ -65,7 +65,7 @@ const LotteryForm = ({ onSubmit, onNavigateBack }: Props) => {
       />
       {nameError && <Text style={styles.error}>{formik.errors.name}</Text>}
       <TextInput
-        accessibilityLabel="Text input field"
+        accessibilityLabel="Lottery Prize Input"
         style={styles.input}
         placeholder="Lottery Prize"
         value={formik.values.prize}

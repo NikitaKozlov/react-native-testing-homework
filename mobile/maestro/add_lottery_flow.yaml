@@ -1,0 +1,15 @@
+appId: host.exp.Exponent
+
+---
+- openLink: exp://127.0.0.1:8081/
+- extendedWaitUntil:
+    visible: Lotteries
+    timeout: 30000
+- tapOn:
+    id: "fab"
+- tapOn: "Lottery Input Field"
+- inputText: "Test Lottery"
+- tapOn: "Lottery Prize Input"
+- inputText: "Test Prize"
+- tapOn: "ADD"
+- assertVisible: "Test Lottery, Test Prize"
