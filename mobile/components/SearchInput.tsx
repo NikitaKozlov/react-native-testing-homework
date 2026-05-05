@@ -18,7 +18,7 @@ const Search = ({ value, onSearch }: Props) => {
         value={value}
         onChangeText={onSearch}
       />
-      <Ionicons name="search" size={16} color="#999999" />
+      <Ionicons name="search" size={16} color="#999999" testID="icon" />
     </View>
   );
 };
